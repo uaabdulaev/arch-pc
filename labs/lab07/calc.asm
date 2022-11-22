@@ -15,10 +15,11 @@ call sread
 mov eax,x ; вызов подпрограммы преобразования
 call atoi ; ASCII кода в число, `eax=x`
 
-add eax,10
-mov ebx,3
+add eax,1
+mov ebx,18
 mul ebx
-sub eax,20
+mov ebx,6
+div ebx
 
 mov ebx,eax
 mov eax,rem
